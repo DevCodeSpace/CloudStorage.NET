@@ -1,0 +1,47 @@
+# Secrets and credentials
+*_app_secrets.json
+*_secrets.json
+token.json
+credentials.json
+
+# Build output
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.o
+*.so
+*.dylib
+
+# IDE
+.vs/
+*.user
+*.suo
+*.sln.iml
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Dependencies
+packages/
+node_modules/
+
+# Logs
+*.log
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
