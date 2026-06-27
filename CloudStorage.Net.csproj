@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <DefaultItemExcludes>$(DefaultItemExcludes);CloudStorage.Net.TestConsole\**;CloudStorage.Abstractions\**;CloudStorage.GoogleDrive\**;CloudStorage.OneDrive\**;CloudStorage.Dropbox\**;CloudStorage.Local\**</DefaultItemExcludes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CloudStorage.Net</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>DevCodeSpace</Authors>
+    <Company>DevCodeSpace</Company>
+    <Description>Google Drive connection and read/write operations library for any .NET application.</Description>
+    <RepositoryUrl>https://github.com/DevCodeSpace/GoogleDrive.NET</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dropbox.Api" Version="7.0.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.55.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.55.0.2566" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+</Project>
